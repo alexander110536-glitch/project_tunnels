@@ -41,18 +41,29 @@ def main():
     parser = Parser()
 
     # Your code goes under this line.
-    parser.dprint("Start.txt", player_vars, pause=0.1)
+
+    p = 0
+    parser.dprint("Start.txt", player_vars, pause=p)
     c1 = input()
-    if c1 =="1":
-        parser.dprint("Left.txt", player_vars, pause=0.1)
+    if c1 =="left":
+        parser.dprint("Left.txt", player_vars, pause=p)
         c2 = input()
-        if c2 =="1":
+        if c2 =="search"
+            parser.dprint("sherch.txt", player_vars, pause=p)
 
         else:
-
-    else:
-        parser.dprint("Right.txt", player_vars, pause=0.1)
+            c2 =="stay"
+            parser.dprint("stay.txt", player_vars, pause=p)
         c2 = input()
+    if c3 =="sherch.txt":
+        parser.dprint("sherch.txt", player_vars, pause=p)
+        c4 = input()
+        if c4 =="right tunnel":
+            parser.dprint("right_tunnel.text", player_vars, pause=p)
+
+        else:
+            c4 = "left tunnel"
+            parser.dprint("left_tunnel.text", player_vars, pause=p)
 #we will change pass later
 #part 2: create right file change pass to righttxt
 
