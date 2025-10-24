@@ -2,4 +2,4 @@ you and your friends try to see if you  to get cellphone signal by climbing a fe
  and 2 of you friends fall of and hurt themselves
 
  you and your friends  have only two options to survive, and you have no idea if someone will come and save
-  you so you guys either choose to stay or start looking for and exit out of tunnels
+  you so you guys either choose to stay or start looking for and exit out of tunnels. (stay again/look for exit)

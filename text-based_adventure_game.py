@@ -1,9 +1,9 @@
 """
 Filename: text-based_adventure_game.py
-Author: <NAME>
-Created: <DATE>
+Author: <Alexander Cruz>
+Created: <10/13/2025>
 Instructor: Holtslander
-Description:
+Description: Text-Based_adventure_game
     <DESCRIPTION OF THE PROGRAM>
 Dependencies: parser
 """
@@ -47,15 +47,15 @@ def main():
     c1 = input()
     if c1 =="left":
         parser.dprint("Left.txt", player_vars, pause=p)
-        q2 = input()
-        if q2 =="search":
+        c2 = input()
+        if c2 =="search":
             parser.dprint("sherch.txt", player_vars, pause=p)
 
         else:
-            q2 =="stay"
+            c2 =="stay"
             parser.dprint("stay.txt", player_vars, pause=p)
     #search
-    if q2 =="search":
+    
             c4 = input()
             if c4 =="right tunnel":
                 parser.dprint("right_tunnel.text", player_vars, pause=p)
@@ -64,7 +64,7 @@ def main():
                 c4 = "left tunnel"
                 parser.dprint("left_tunnel.text", player_vars, pause=p)
     #stay
-    if q2 =="stay":
+    
             c5 = input()
             if c5 =="stay again":
                 parser.dprint("stay_again.txt", player_vars, pause=p)
@@ -73,7 +73,7 @@ def main():
                 c5 = "look for exit"
                 parser.dprint("start_looking_for_exit.txt", player_vars, pause=p)
     #right tunnel
-    if c4 =="right tunnel":
+    
             c6 = input()
             if c6 =="stay hidden":
                 parser.dprint("stay_hidden.txt", player_vars, pause=p)
@@ -81,8 +81,19 @@ def main():
             else:
                 c6 = "fight"
                 parser.dprint("Fight.txt", player_vars, pause=p)
+    
+    #stay again
+    
+            c8 = input()
+            if c8 =="don't go":
+                parser.dprint("Stay_four.txt", player_vars, pause=p)
+
+            else:
+                c8 = "no"
+                parser.dprint("No.txt", player_vars, pause=p)
+
     #stay hidden
-    if c6 =="stay hidden":
+    
             c7 = input()
             if c7 =="leave him":
                 parser.dprint("leave_him.txt", player_vars, pause=p)
@@ -90,17 +101,8 @@ def main():
             else:
                 c7 = "stay with him"
                 parser.dprint("stay_with_him.txt", player_vars, pause=p)
-    #stay again
-    if c5 =="stay again":
-            c8 = input()
-            if c8 =="stay four":
-                parser.dprint("Stay_four.txt", player_vars, pause=p)
-
-            else:
-                c8 = "no"
-                parser.dprint("No.txt", player_vars, pause=p)
     #Look for exit
-    if c5 =="Look for exit":
+    
             c9 = input()
             if c9 =="you leave them":
                 parser.dprint("you_leave_them.txt", player_vars, pause=p)
@@ -109,7 +111,7 @@ def main():
                 c9 = "stay three"
                 parser.dprint("Stay_3.txt", player_vars, pause=p)
     #stay 3
-    if c9 =="stay three":
+    
             c10 = input()
             if c10 =="say something":
                 parser.dprint("Say_something.txt", player_vars, pause=p)
@@ -118,7 +120,7 @@ def main():
                 c10 = "spy on him"
                 parser.dprint("Spy_on_him.txt", player_vars, pause=p)
     #no
-    if c9 =="no":
+    
             c10 = input()
             if c10 =="say something":
                 parser.dprint("Say_something.txt", player_vars, pause=p)
@@ -127,7 +129,7 @@ def main():
                 c10 = "spy on him"
                 parser.dprint("Spy_on_him.txt", player_vars, pause=p)
     #say something
-    if c9 =="say something":
+    
             c11 = input()
             if c11 =="don't believe":
                 parser.dprint("don't_believe.txt", player_vars, pause=p)
@@ -140,6 +142,91 @@ def main():
 
 #we will change pass later
 #part 2: create right file change pass to righttxt
+    else:
+        parser.dprint("Right.txt", player_vars, pause=p)
+        q18 = input()
+        if q18 =="follow shadow":
+            parser.dprint("Follow_shadow.txt", player_vars, pause=p)
+
+        else:
+            q18 =="ignore"
+            parser.dprint("Ignore.txt", player_vars, pause=p)
+    #follow shadow
+    
+            q4 = input()
+            if q4 =="follow isamu":
+                parser.dprint("follow_Isamu.txt", player_vars, pause=p)
+
+            else:
+                q4 = "exit"
+                parser.dprint("Exit.txt", player_vars, pause=p)
+    #ignore
+    
+            q5 = input()
+            if q5 =="treat his wound":
+                parser.dprint("Treat_wound.txt", player_vars, pause=p)
+
+            else:
+                q5 = "keep going"
+                parser.dprint("Keep_going.txt", player_vars, pause=p)
+    #Follow isamu
+    
+            q6 = input()
+            if q6 =="run":
+                parser.dprint("Run.txt", player_vars, pause=p)
+
+            else:
+                q6 = "what happens"
+                parser.dprint("What_happens.txt", player_vars, pause=p)
+    
+    #treat his wound
+    
+            q8 = input()
+            if q8 =="give katana":
+                parser.dprint("Give_katana.txt", player_vars, pause=p)
+
+            else:
+                q8 = "run two"
+                parser.dprint("Run_two.txt", player_vars, pause=p)
+    
+    #stay hidden
+    
+            q7 = input()
+            if q7 =="leave him":
+                parser.dprint("leave_him.txt", player_vars, pause=p)
+
+            else:
+                q7 = "stay with him"
+                parser.dprint("stay_with_him.txt", player_vars, pause=p)
+    #keep going
+    
+            q9 = input()
+            if q9 =="collapse":
+                parser.dprint("collapse.txt", player_vars, pause=p)
+
+            else:
+                q9 = "run straight"
+                parser.dprint("Run_straight.txt", player_vars, pause=p)
+    
+    #give katana
+    
+            q10 = input()
+            if q10 =="accept duel":
+                parser.dprint("Accept_duel.txt", player_vars, pause=p)
+
+            else:
+                q10 = "you go looking"
+                parser.dprint("You_go_looking.txt", player_vars, pause=p)
+    #accept duel
+    
+            q11 = input()
+            if q11 =="throw rocks":
+                parser.dprint("Don't_help.txt", player_vars, pause=p)
+
+            else:
+                q11 = "don't help"
+                parser.dprint("Help.txt", player_vars, pause=p)
+
 
     # Clean up code. Do not write any code past this line.
     parser.destroy()
